@@ -13,7 +13,7 @@ public class Utils {
 	static Scanner sc = new Scanner(System.in);
 
 	public static Connection conectar() {
-		String URL_SERVIDOR = "jdbc:sqlite:src/jsqlite/jsqlite3.geek";
+		String URL_SERVIDOR = "jdbc:sqlite:C:/Users/Usuário/Documents/Banco de Dados/SQLite/jsqlite.db";
 		
 		try {
 			Connection conn = DriverManager.getConnection(URL_SERVIDOR);
@@ -94,7 +94,7 @@ public class Utils {
 			int res = salvar.executeUpdate(); // devolve a quantidade de linhas
 			
 			if (res > 0) {
-				System.out.println("O produto " + nome + "foi inserido com sucesso.");
+				System.out.println("O produto " + nome + " foi inserido com sucesso.");
 			}else {
 				System.out.println("Não foi possivel inserir o produto.");
 			}
